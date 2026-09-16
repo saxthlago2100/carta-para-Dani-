@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi chiquita 💗</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#ffd6e7,#fff0f6,#ffc1da);
+  color:#7a2148;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+.corazon{
+  position:fixed;
+  color:#ff6fa5;
+  font-size:25px;
+  animation:flotar 6s linear infinite;
+  z-index:0;
+}
+
+@keyframes flotar{
+  0%{transform:translateY(100vh) rotate(0deg);opacity:0;}
+  20%{opacity:1;}
+  100%{transform:translateY(-120vh) rotate(360deg);opacity:0;}
+}
+
+.contenedor{
+  position:relative;
+  z-index:1;
+  max-width:850px;
+  margin:auto;
+  padding:35px 18px;
+}
+
+h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.subtitulo{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.carta{
+  background:rgba(255,255,255,.85);
+  padding:30px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(180,50,100,.2);
+  line-height:1.8;
+  font-size:18px;
+  text-align:left;
+}
+
+.galeria{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  margin:30px 0;
+}
+
+.galeria img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 6px 18px rgba(150,40,90,.2);
+}
+
+.boton{
+  display:inline-block;
+  margin:15px 5px;
+  padding:14px 24px;
+  background:#ff5f9e;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(255,70,140,.3);
+}
+
+.sorpresa{
+  margin-top:35px;
+  padding:25px;
+  background:#fff;
+  border-radius:25px;
+}
+
+#mensaje{
+  display:none;
+  margin-top:20px;
+  font-size:21px;
+  font-weight:bold;
+  line-height:1.6;
+}
+
+button{
+  border:none;
+  cursor:pointer;
+  font-size:17px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="corazon" style="left:5%;animation-delay:0s;">💗</div>
+<div class="corazon" style="left:20%;animation-delay:2s;">💕</div>
+<div class="corazon" style="left:40%;animation-delay:4s;">💖</div>
+<div class="corazon" style="left:65%;animation-delay:1s;">💗</div>
+<div class="corazon" style="left:85%;animation-delay:3s;">💞</div>
+
+<div class="contenedor">
+
+<h1>Para mi chiquita 💗</h1>
+
+<div class="subtitulo">
+Una pequeña parte de todo lo que siento por ti 🥹💕
+</div>
+
+<div class="carta">
+
+<p>
+Mi chiquita, quería hacerte algo diferente, algo que pudieras guardar
+y volver a ver cuando quieras, porque aunque a veces no sepa cómo
+expresarte todo lo que siento, quiero que sepas lo muchísimo que te amo,
+</p>
+
+<p>
+Gracias por estar conmigo, por cada momento, cada risa, cada conversación
+y por todos esos recuerdos que hemos ido creando juntos, contigo he vivido
+momentos que de verdad significan muchísimo para mí,
+</p>
+
+<p>
+Sé que no todo siempre es perfecto y que hemos tenido momentos difíciles,
+pero aun así quiero seguir aprendiendo, mejorar por ti y por nosotros,
+porque lo nuestro es algo que quiero cuidar de verdad,
+</p>
+
+<p>
+Quiero que cuando veas esta carta recuerdes que hay alguien que te quiere
+muchísimo, que piensa en ti y que se siente muy afortunado de tenerte en
+su vida,
+</p>
+
+<p>
+Eres mi chiquita, una persona demasiado especial para mí, y espero que
+podamos seguir creando muchísimos recuerdos juntos, seguir riéndonos,
+apoyándonos y estando ahí el uno para el otro,
+</p>
+
+<p style="text-align:center;font-size:24px;">
+Te amo muchísimo, mi chiquita 💗🥹💘
+</p>
+
+</div>
+
+<h2>Algunos de nuestros momentos 💕</h2>
+
+<div class="galeria">
+  <img src="foto1.jpg" alt="Nuestro recuerdo 1">
+  <img src="foto2.jpg" alt="Nuestro recuerdo 2">
+  <img src="foto3.jpg" alt="Nuestro recuerdo 3">
+  <img src="foto4.jpg" alt="Nuestro recuerdo 4">
+</div>
+
+<h2>Una canción para ti 🎶💗</h2>
+
+<a class="boton"
+href="https://youtu.be/Ol0-9Ob-QNk?si=2HiOqpVQwvMFhb-w"
+target="_blank">
+💗 Escuchar nuestra canción 💗
+</a>
+
+<div class="sorpresa">
+
+<h2>💌 Tengo algo más que decirte...</h2>
+
+<button class="boton" onclick="mostrarMensaje()">
+Abrir sorpresa 💗
+</button>
+
+<div id="mensaje">
+Si llegaste hasta aquí, quiero que sepas algo...
+<br><br>
+Te amo muchísimo, mi chiquita 💗
+<br>
+Y pase lo que pase, siempre voy a guardar con muchísimo cariño
+cada momento que hemos vivido juntos 🥹💞
+<br><br>
+Gracias por existir y por formar parte de mi vida 💘
+</div>
+
+</div>
+
+<p style="margin-top:35px;">
+Hecho con mucho amor para mi chiquita 💗
+</p>
+
+</div>
+
+<script>
+function mostrarMensaje(){
+  document.getElementById("mensaje").style.display="block";
+}
+</script>
+
+</body>
+</html>
